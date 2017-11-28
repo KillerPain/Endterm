@@ -1,0 +1,10 @@
+<mat-list>
+    <mat-list-item *ngFor="let phone of phones">
+        <div class="card" *ngIf="phone; else other_content">
+            <span>{{phone.phone}}</span>
+            <span>{{phone.avatar}}</span>
+        </div>
+    </mat-list-item>
+</mat-list>
+<ng-template #other_content>Hi You Don't Have Any Calls</ng-template>
+<button mat-fab (click)="onAdd()">+</button>

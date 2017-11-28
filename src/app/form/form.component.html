@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="form">
+        <span>Add Contact</span>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Name:" [(ngModel)]="name">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Phone:" [(ngModel)]="phone">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Avatar:" [(ngModel)]="avatar">
+        </mat-form-field>
+        <button mat-button type="submit" (click)="onCreate()">Add</button>
+        <button mat-button (click)="close()">Close</button>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    flex: 1 0 auto;
+    mat-tab-group {
+        flex: 1 0 auto;
+        max-width: 100vw;
+    }
+}
+
+.mat-tab-labels {
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+}

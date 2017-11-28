@@ -1,0 +1,12 @@
+<mat-list>
+    <mat-list-item *ngFor="let contact of contacts; let i = index">
+        <div class="card" *ngIf="contact; else other_content">
+            <span>{{contact.name}}</span>
+            <span>{{contact.avatar}}</span>
+            <button mat-button (click)="onEdit(contact)">Edit</button>
+            <button mat-button (click)="onDelete(i)">Delete</button>
+        </div>
+    </mat-list-item>
+</mat-list>
+<ng-template #other_content>Hi You Don't Have Any Contacts Please Add Some</ng-template>
+<button mat-fab (click)="onAdd()">+</button>
